@@ -5,6 +5,8 @@ import PlanetOne from '../images/planet.svg';
 import PlanetTwo from '../images/planet-2.svg';
 import PlanetThree from '../images/planet-3.svg';
 import PlanetFour from '../images/planet-4.svg';
+import chocooooolate from '../images/chocooooolate.png';
+import backdrop3 from '../images/backdrop3.png';
 
 const Section = styled.section`
   height: 100vh;
@@ -12,6 +14,7 @@ const Section = styled.section`
   justify-content: center;
   align-items: center;
   background : #fad9f4;
+  background-image: url(https://i.ibb.co/936NdqV/backdrop4.png);
   background-image: url("
   ");
   `;
@@ -28,8 +31,9 @@ const Container = styled.div`
 
 const ColumnLeft = styled.div`
   display: flex;
-  color: #fff;
+  color: #fc05cf;
   flex-direction: column;
+  background-image: url('https://i.ibb.co/Z6PLGXy/backdrop3.png');
   justify-content: center;
   align-items: flex-start;
   padding: 5rem 2rem;
@@ -46,13 +50,13 @@ const ColumnLeft = styled.div`
 
 const Button = styled(motion.button)`
   padding: 1rem 3rem;
-  font-size: 1rem;
-  border: 2px solid #fff;
+  font-size: 1.5rem;
+  border: 3px solid #fff;
   border-radius: 4px;
   outline: none;
   cursor: pointer;
   background: transparent;
-  color: #fff;
+  color: #000;
 `;
 
 const Image = styled(motion.img)`
@@ -123,10 +127,25 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 1.5 } }}
           >
-            Take  Look
+            Watch Here
           </Button>
         </ColumnLeft>
         <ColumnRight>
+       
+       
+
+<Image 
+        src={chocooooolate}
+        alt='planet'
+            whileTap={{ scale: 0.2 }}
+            drag={true}
+            dragConstraints={{ left: 100, right: 250, top: 0, bottom: 50 }}
+            initial={{ opacity: 10, y: -100 }}
+            animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+        />
+
+
+
           <Image
             src={PlanetOne}
             alt='planet'
