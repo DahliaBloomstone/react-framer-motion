@@ -51,6 +51,7 @@ const ColumnLeft = styled.div`
 const Button = styled(motion.button)`
   padding: 1rem 3rem;
   font-size: 1.5rem;
+  font-weight: bold;
   border: 3px solid #fff;
   border-radius: 4px;
   outline: none;
@@ -119,7 +120,7 @@ const Hero = () => {
           <Button
             whileHover={{ scale: 1.05 }}
             whileTap={{
-              scale: 0.95,
+              scale: 0.85,
               backgroundColor: '#ed13c9',
               border: 'none',
               color: '#000'
